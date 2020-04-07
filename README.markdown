@@ -1,26 +1,33 @@
-Usage
-=====
+## Usage
+
 `python strip-images-from-apple-vcard.py vCards.vcf clean.vcf`
 
-Purpose
-=======
+## Credits
+
+This repo is a fork of [a script authored by Mario Aeby](https://github.com/emeidi/strip-images-from-apple-vcard), with very minor fixes of mine.
+
+## Purpose
+
 Strips pictures from vCards .vcf exports from Apple's AddressBook to be imported into other VCF capable tools (e.g. RoundCube Webmail).
 
-I was able to reduce a complete backup of my Apple AddressBook in VCF format weighing 11 MB to 638 KB.
+It may also be helpful if you experience slugishness in the Contacts app.
 
-Step by step
-============
+I was able to reduce a complete backup of my contacts in VCF format weighing 61 MB to 936 KB.
 
-AddressBook
------------
+## Step by step
+
+### AddressBook
+
 1. Open AddressBook
-1. Select all address book entries (Cmd-A)
-1. AdressBook
-1. Export...
-1. Export vCard...
-1. Save
+2. Select all address book entries (Cmd-A)
+3. AdressBook
+4. Export...
+5. Export vCard...
+6. Save
 
-Shell
------
-1. Switch to directory containing this script and the vCards.vcf file
-1. `python strip-images-from-apple-vcard.py vCards.vcf clean.vcf`
+### Shell
+
+Python v3 compatible.
+
+1. Switch to the directory containing this script and your VCF file
+2. `./strip-images-from-apple-vcard.py vCards.vcf clean.vcf`
